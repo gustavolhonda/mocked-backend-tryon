@@ -10,15 +10,15 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// ------------------------------- //
+
 // available users
 const users = [
     {
-        username: "user1",
+        username: "user1@gmail.com",
         password: "123"
     },
     {
-        username: "user2",
+        username: "user2@gmail.com",
         password: "1234"
     }
 ];
@@ -70,12 +70,9 @@ const products = [
         avaliableSizes: ["M", "L", "XL"],
         image: "https://m.media-amazon.com/images/I/41Tbr4iFggL._AC_.jpg"
     }
-    // imagem loja e produto hard coded
 ];
-// ------------------------------- //
-// ------------------------------- //
-// routes
 
+// routes
 app.get('/status', async (req, res) => {
     console.log('GET status');
 
@@ -89,6 +86,7 @@ app.get('/status', async (req, res) => {
 
 app.get('/products', async (req, res) => {
     console.log('GET products');
+    await delay(1500);
     res.json(products);
 });
 
@@ -96,25 +94,28 @@ app.post('/login', async (req, res) => {
     const { username, password } = req.body;
     console.log("POST login: " + JSON.stringify(req.body));
 
-    await delay(2000);
+    await delay(1500);
 
     if (!username || !password) {
+        res.status(400);
         return res.json({ message: 'Username and password are required.' });
     }
 
     const user = users.find(u => u.username === username);
     if (user === undefined) {
+        res.status(404);
         return res.json({ message: 'unexisting username' });
     }
 
     if (user.password !== password) {
+        res.status(401);
         return res.json({ message: 'wrong password' });
     }
 
+    res.status(200);
     res.json({ message: 'success' });
 });
 
-// ------------------------------- //
 app.listen(port, () => {
     console.log('started server...');
 });
