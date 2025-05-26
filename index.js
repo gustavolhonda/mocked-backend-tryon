@@ -35,6 +35,7 @@ const products = [
         description: "Description of Product 1",
         rating: 4.5,
         avaliableSizes: ["S", "M", "L"],
+        image: "https://m.media-amazon.com/images/I/41Tbr4iFggL._AC_.jpg"
     },
     {
         id: 2,
@@ -45,6 +46,29 @@ const products = [
         description: "Description of Product 2",
         rating: 4.0,
         avaliableSizes: ["M", "L", "XL"],
+        image: "https://m.media-amazon.com/images/I/41Tbr4iFggL._AC_.jpg"
+    },
+    {
+        id: 3,
+        name: "Product 3",
+        price: 300,
+        shopName: "Shop 3",
+        shopCategory: "Category 3",
+        description: "Description of Product 3",
+        rating: 4.0,
+        avaliableSizes: ["M", "L", "XL"],
+        image: "https://m.media-amazon.com/images/I/41Tbr4iFggL._AC_.jpg"
+    },
+    {
+        id: 4,
+        name: "Product 4",
+        price: 400,
+        shopName: "Shop 4",
+        shopCategory: "Category 4",
+        description: "Description of Product 4",
+        rating: 4.0,
+        avaliableSizes: ["M", "L", "XL"],
+        image: "https://m.media-amazon.com/images/I/41Tbr4iFggL._AC_.jpg"
     }
     // imagem loja e produto hard coded
 ];
