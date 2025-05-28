@@ -28,47 +28,47 @@ const users = [
 const products = [
     {
         id: 1,
-        name: "Product 1",
+        name: "Camiseta cinza",
         price: 100,
-        shopName: "Shop 1",
-        shopCategory: "Category 1",
-        description: "Description of Product 1",
+        shopName: "Renner",
+        shopCategory: "Casual",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor tortor odio, vitae tristique elit fermentum eget. Duis non nunc tincidunt, ullamcorper risus vel, viverra ipsum. Donec facilisis orci at elit bibendum, id cursus nisi condimentum.",
         rating: 4.5,
-        avaliableSizes: ["S", "M", "L"],
-        image: "https://m.media-amazon.com/images/I/41Tbr4iFggL._AC_.jpg"
+        avaliableSizes: ["XS", "S", "M", "L", "XL"],
+        image: ["https://m.media-amazon.com/images/I/51rHZbuE08L._AC_SX569_.jpg", "https://m.media-amazon.com/images/I/51APuefJQiL._AC_SX569_.jpg", "https://m.media-amazon.com/images/I/71llUKLOdLL._AC_SX569_.jpg"]
     },
     {
         id: 2,
-        name: "Product 2",
+        name: "Calça baggy",
         price: 200,
-        shopName: "Shop 2",
-        shopCategory: "Category 2",
-        description: "Description of Product 2",
+        shopName: "Skate Street Wear",
+        shopCategory: "Street Wear",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor tortor odio, vitae tristique elit fermentum eget. Duis non nunc tincidunt, ullamcorper risus vel, viverra ipsum. Donec facilisis orci at elit bibendum, id cursus nisi condimentum.",
         rating: 4.0,
         avaliableSizes: ["M", "L", "XL"],
-        image: "https://m.media-amazon.com/images/I/41Tbr4iFggL._AC_.jpg"
+        image: ["https://m.media-amazon.com/images/I/51uyWavwZPL._AC_SX679_.jpg", "https://m.media-amazon.com/images/I/71gS+N97umL._AC_SX679_.jpg", "https://m.media-amazon.com/images/I/71fueWl2C4L._AC_SX679_.jpg"]
     },
     {
         id: 3,
-        name: "Product 3",
+        name: "Kit 2 Moletom Careca",
         price: 300,
-        shopName: "Shop 3",
-        shopCategory: "Category 3",
-        description: "Description of Product 3",
-        rating: 4.0,
-        avaliableSizes: ["M", "L", "XL"],
-        image: "https://m.media-amazon.com/images/I/41Tbr4iFggL._AC_.jpg"
+        shopName: "Lacoste",
+        shopCategory: "Luxo",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor tortor odio, vitae tristique elit fermentum eget. Duis non nunc tincidunt, ullamcorper risus vel, viverra ipsum. Donec facilisis orci at elit bibendum, id cursus nisi condimentum.",
+        rating: 5.0,
+        avaliableSizes: ["XS", "S", "M", "L", "XL"],
+        image: ["https://m.media-amazon.com/images/I/31ogfSymCaL._AC_.jpg", "https://m.media-amazon.com/images/I/51M+YFvszpL._AC_SX679_.jpg", "https://m.media-amazon.com/images/I/51yxxwJ18vL._AC_SX679_.jpg"]
     },
     {
         id: 4,
-        name: "Product 4",
+        name: "Boné de Aba Reta",
         price: 400,
-        shopName: "Shop 4",
-        shopCategory: "Category 4",
-        description: "Description of Product 4",
+        shopName: "Ophicina",
+        shopCategory: "Chapéus e Bonés",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor tortor odio, vitae tristique elit fermentum eget. Duis non nunc tincidunt, ullamcorper risus vel, viverra ipsum. Donec facilisis orci at elit bibendum, id cursus nisi condimentum.",
         rating: 4.0,
         avaliableSizes: ["M", "L", "XL"],
-        image: "https://m.media-amazon.com/images/I/41Tbr4iFggL._AC_.jpg"
+        image: ["https://m.media-amazon.com/images/I/51DTajFKJ2L._AC_SX679_.jpg", "https://m.media-amazon.com/images/I/61x-gkEfNCL._AC_SX679_.jpg", "https://m.media-amazon.com/images/I/61sdZsl3gYL._AC_SX679_.jpg"]
     }
 ];
 
